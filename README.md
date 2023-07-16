@@ -1,6 +1,6 @@
 # Drumms🥁
 
-Drumms is a web application that allows users to play virtual drums using their keyboard or by clicking on drum tiles. Each drum tile represents a different drum sound and is mapped to a specific keyboard letter. The app supports playing multiple sounds simultaneously, providing a realistic drumming experience.
+**Drumms** is a web application that allows users to play virtual drums using their keyboard or by clicking on drum tiles. Each drum tile represents a different drum sound and is mapped to a specific keyboard letter. The app supports playing multiple sounds simultaneously, providing a realistic drumming experience.
 
 ## Features
 
@@ -12,9 +12,9 @@ Drumms is a web application that allows users to play virtual drums using their 
 
 ## Technologies Used
 
-- HTML: Provides the structure and layout of the webpage.
-- CSS: Handles the visual styling and responsiveness of the app.
-- JavaScript: Implements the drum interaction, key mappings, and audio playback.
+- **HTML**: Provides the structure and layout of the webpage.
+- **CSS**: Handles the visual styling and responsiveness of the app.
+- **JavaScript**: Implements the drum interaction, key mappings, and audio playback.
 - Audio files: Sound samples in an appropriate format (e.g., WAV, MP3).
 
 ## Usage
