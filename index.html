@@ -1,7 +1,56 @@
-<html>
-    <head>
-        <title>
-            Drumms🥁
-        </title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Drumms🥁</title>
+</head>
+<body>
+  <h1>Drumms🥁</h1>
+  <div class="drum-pad" data-key="65" id="kick-pad">
+    <span class="key-letter">A</span>
+    <br>
+    <span class="sound-name">Kick</span>
+    <audio data-key="65" src="audio/kick.wav"></audio>
+  </div>
+  <div class="drum-pad" data-key="83" id="snare-pad">
+    <span class="key-letter">S</span>
+    <br>
+    <span class="sound-name">Snare</span>
+    <audio data-key="83" src="audio/snare.wav"></audio>
+  </div>
+  <div class="drum-pad" data-key="81" id="closedhat-pad">
+    <span class="key-letter">Q</span>
+    <br>
+    <span class="sound-name">Closed Hat</span>
+    <audio data-key="81" src="audio/closedhat.wav"></audio>
+  </div>
+  <div class="drum-pad" data-key="87" id="openhat-pad">
+    <span class="key-letter">W</span>
+    <br>
+    <span class="sound-name">Open Hat</span>
+    <audio data-key="87" src="audio/openhat.wav"></audio>
+  </div>
+  <div class="drum-pad" data-key="68" id="tom1-pad">
+    <span class="key-letter">D</span>
+    <br>
+    <span class="sound-name">Tom 1</span>
+    <audio data-key="68" src="audio/tom1.wav"></audio>
+  </div>
+  <div class="drum-pad" data-key="70" id="tom2-pad">
+    <span class="key-letter">F</span>
+    <br>
+    <span class="sound-name">Tom 2</span>
+    <audio data-key="70" src="audio/tom2.wav"></audio>
+  </div>
+  <div class="drum-pad" data-key="69" id="cymbal-pad">
+    <span class="key-letter">E</span>
+    <br>
+    <span class="sound-name">Cymbal</span>
+    <audio data-key="69" src="audio/cymbal.wav"></audio>
+  </div>
+
+  <script src="app.js"></script>
+</body>
 </html>
