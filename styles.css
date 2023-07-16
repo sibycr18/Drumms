@@ -31,11 +31,11 @@ body {
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
   
-  .drum-pad:hover {
+  /* .drum-pad:hover {
     background-color: #3949ab;
     transform: scale(0.95);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
+  } */
   
   .key-letter {
     font-size: 36px;
