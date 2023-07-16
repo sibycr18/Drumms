@@ -4,6 +4,11 @@ body {
     color: #ffffff;
     text-align: center;
     user-select: none;
+    
+    /* display: flex; */
+    /* flex-direction: row;
+    justify-content: center;
+    align-items: center; */
   }
   
   h1 {
@@ -28,7 +33,7 @@ body {
   
   .drum-pad:hover {
     background-color: #3949ab;
-    transform: scale(1.05);
+    transform: scale(0.95);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
   
@@ -49,7 +54,8 @@ body {
   
   /* Animation for click */
   .drum-pad:active {
-    transform: scale(1.35);
+    /* transform: scale(0.95); */
+    transform: scale(1.05);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
   
