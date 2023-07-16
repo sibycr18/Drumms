@@ -28,10 +28,10 @@ function playDrum(padId, sound) {
 // Drum pad click event listeners
 document.getElementById('kick-pad').addEventListener('click', function() {
     playDrum('kick-pad', kickSound);
-    // document.getElementById('kick-pad').style.transform = 'scale(1.05)';
-    // setTimeout(function() {
-    //     document.getElementById('kick-pad').style.transform = 'scale(1)';
-    // }, 140);
+    document.getElementById('kick-pad').style.transform = 'scale(1.05)';
+    setTimeout(function() {
+        document.getElementById('kick-pad').style.transform = 'scale(1)';
+    }, 140);
 });
 
 document.getElementById('closedhat-pad').addEventListener('click', function() {
@@ -52,10 +52,10 @@ document.getElementById('openhat-pad').addEventListener('click', function() {
 
 document.getElementById('snare-pad').addEventListener('click', function() {
     playDrum('snare-pad', snareSound);
-    // document.getElementById('snare-pad').style.transform = 'scale(1.05)';
-    // setTimeout(function() {
-    //     document.getElementById('snare-pad').style.transform = 'scale(1)';
-    // }, 140);
+    document.getElementById('snare-pad').style.transform = 'scale(1.05)';
+    setTimeout(function() {
+        document.getElementById('snare-pad').style.transform = 'scale(1)';
+    }, 140);
 });
 
 document.getElementById('cymbal-pad').addEventListener('click', function() {
