@@ -1,4 +1,4 @@
-# Drumms
+# Drumms🥁
 
 Drumms is a web application that allows users to play virtual drums using their keyboard or by clicking on drum tiles. Each drum tile represents a different drum sound and is mapped to a specific keyboard letter. The app supports playing multiple sounds simultaneously, providing a realistic drumming experience.
 
