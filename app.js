@@ -88,7 +88,6 @@ document.addEventListener('keydown', function(event) {
         kickKeyIsPressed = true;
         playDrum('kick-pad', kickSound);
         document.getElementById('kick-pad').style.transform = 'scale(1.05)';
-        // document.getElementById('kick-pad').style.boxShadow = '0 0 5px rgba(0, 0, 0, 0.3)';
         setTimeout(function() {
             document.getElementById('kick-pad').style.transform = 'scale(1)';
         }, 140);
