@@ -18,6 +18,7 @@ let tom2KeyIsPressed = false;
 
 // Function to play a drum sound and trigger animation
 function playDrum(padId, sound) {
+    console.log(padId);
   if (!sound.paused) {
     sound.currentTime = 0;
   } else {
@@ -85,19 +86,26 @@ document.addEventListener('keydown', function(event) {
 });
 
 document.addEventListener('keyup', function(event) {
-  if (event.key === 'a') {
+    if (event.key === 'a') {
     kickKeyIsPressed = false;
-  } else if (event.key === 'q') {
+    document.getElementById('kick-pad').classList.remove('active');
+    } else if (event.key === 'q') {
     closedHatKeyIsPressed = false;
-  } else if (event.key === 'w') {
+    document.getElementById('closedhat-pad').classList.remove('active');
+    } else if (event.key === 'w') {
     openHatKeyIsPressed = false;
-  } else if (event.key === 's') {
+    document.getElementById('openhat-pad').classList.remove('active');
+    } else if (event.key === 's') {
     snareKeyIsPressed = false;
-  } else if (event.key === 'e') {
+    document.getElementById('snare-pad').classList.remove('active');
+    } else if (event.key === 'e') {
     cymbalKeyIsPressed = false;
-  } else if (event.key === 'd') {
+    document.getElementById('cymbal-pad').classList.remove('active');
+    } else if (event.key === 'd') {
     tom1KeyIsPressed = false;
-  } else if (event.key === 'f') {
+    document.getElementById('tom1-pad').classList.remove('active');
+    } else if (event.key === 'f') {
     tom2KeyIsPressed = false;
-  }
+    document.getElementById('tom2-pad').classList.remove('active');
+    }
 });
