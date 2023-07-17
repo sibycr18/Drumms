@@ -3,31 +3,38 @@
 // Drum sound objects
 const kickSound = new Howl({
     src: ['./assets/sounds/kick.wav'],
-    html5: true
+    html5: true,
+    preload: true
 });
 const closedHatSound = new Howl({
     src: ['../assets/sounds/closedhat.wav'],
-    html5: true
+    html5: true,
+    preload: true
 });
 const openHatSound = new Howl({
     src: ['./assets/sounds/openhat.wav'],
-    html5: true
+    html5: true,
+    preload: true
 });
 const snareSound = new Howl({
     src: ['./assets/sounds/snare.wav'],
-    html5: true
+    html5: true,
+    preload: true
 });
 const cymbalSound = new Howl({
     src: ['./assets/sounds/cymbal.wav'],
-    html5: true
+    html5: true,
+    preload: true
 });
 const tom1Sound = new Howl({
     src: ['./assets/sounds/tom1.wav'],
-    html5: true
+    html5: true,
+    preload: true
 });
 const tom2Sound = new Howl({
     src: ['./assets/sounds/tom2.wav'],
-    html5: true
+    html5: true,
+    preload: true
 });
 
 // Define variables to track the key state and animation state
