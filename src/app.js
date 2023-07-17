@@ -1,11 +1,32 @@
 // Drum sound objects
-const kickSound = new Audio('audio/kick.wav');
-const closedHatSound = new Audio('audio/closedhat.wav');
-const openHatSound = new Audio('audio/openhat.wav');
-const snareSound = new Audio('audio/snare.wav');
-const cymbalSound = new Audio('audio/cymbal.wav');
-const tom1Sound = new Audio('audio/tom1.wav');
-const tom2Sound = new Audio('audio/tom2.wav');
+const kickSound = new Howl({
+    src: ['../assets/sounds/kick.wav'],
+    html5: true
+});
+const closedHatSound = new Howl({
+    src: ['../assets/sounds/closedhat.wav'],
+    html5: true
+});
+const openHatSound = new Howl({
+    src: ['../assets/sounds/openhat.wav'],
+    html5: true
+});
+const snareSound = new Howl({
+    src: ['../assets/sounds/snare.wav'],
+    html5: true
+});
+const cymbalSound = new Howl({
+    src: ['../assets/sounds/cymbal.wav'],
+    html5: true
+});
+const tom1Sound = new Howl({
+    src: ['../assets/sounds/tom1.wav'],
+    html5: true
+});
+const tom2Sound = new Howl({
+    src: ['../assets/sounds/tom2.wav'],
+    html5: true
+});
 
 // Define variables to track the key state and animation state
 let kickKeyIsPressed = false;
@@ -18,11 +39,7 @@ let tom2KeyIsPressed = false;
 
 // Function to play a drum sound and trigger animation
 function playDrum(padId, sound) {
-    if (!sound.paused) {
-        sound.currentTime = 0;
-    } else {
-        sound.play();
-    }
+    sound.play();
 }
 
 // Drum pad click event listeners

@@ -27,7 +27,7 @@
 2. Navigate to the project directory:
 
     ```bash
-    cd Drumms
+    cd Drumms/src
 
 3. Open the index.html file in your web browser.
 
