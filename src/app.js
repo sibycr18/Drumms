@@ -87,58 +87,30 @@ document.addEventListener('keydown', function(event) {
     if (event.key === 'a' && !kickKeyIsPressed) {
         kickKeyIsPressed = true;
         playDrum('kick-pad', kickSound);
-        document.getElementById('kick-pad').style.transform = 'scale(1.05)';
-        setTimeout(function() {
-            document.getElementById('kick-pad').style.transform = 'scale(1)';
-        }, 140);
 
     } else if (event.key === 'q' && !closedHatKeyIsPressed) {
         closedHatKeyIsPressed = true;
         playDrum('closedhat-pad', closedHatSound);
-        document.getElementById('closedhat-pad').style.transform = 'scale(1.05)';
-        setTimeout(function() {
-            document.getElementById('closedhat-pad').style.transform = 'scale(1)';
-        }, 140);
 
     } else if (event.key === 'w' && !openHatKeyIsPressed) {
         openHatKeyIsPressed = true;
         playDrum('openhat-pad', openHatSound);
-        document.getElementById('openhat-pad').style.transform = 'scale(1.05)';
-        setTimeout(function() {
-            document.getElementById('openhat-pad').style.transform = 'scale(1)';
-        }, 140);
 
     } else if (event.key === 's' && !snareKeyIsPressed) {
         snareKeyIsPressed = true;
         playDrum('snare-pad', snareSound);
-        document.getElementById('snare-pad').style.transform = 'scale(1.05)';
-        setTimeout(function() {
-            document.getElementById('snare-pad').style.transform = 'scale(1)';
-        }, 140);
 
     } else if (event.key === 'e' && !cymbalKeyIsPressed) {
         cymbalKeyIsPressed = true;
         playDrum('cymbal-pad', cymbalSound);
-        document.getElementById('cymbal-pad').style.transform = 'scale(1.05)';
-        setTimeout(function() {
-            document.getElementById('cymbal-pad').style.transform = 'scale(1)';
-        }, 140);
 
     } else if (event.key === 'd' && !tom1KeyIsPressed) {
         tom1KeyIsPressed = true;
         playDrum('tom1-pad', tom1Sound);
-        document.getElementById('tom1-pad').style.transform = 'scale(1.05)';
-        setTimeout(function() {
-            document.getElementById('tom1-pad').style.transform = 'scale(1)';
-        }, 140);
 
     } else if (event.key === 'f' && !tom2KeyIsPressed) {
         tom2KeyIsPressed = true;
         playDrum('tom2-pad', tom2Sound);
-        document.getElementById('tom2-pad').style.transform = 'scale(1.05)';
-        setTimeout(function() {
-            document.getElementById('tom2-pad').style.transform = 'scale(1)';
-        }, 140);
     }
 });
 
