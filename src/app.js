@@ -1,5 +1,3 @@
-// import { Howl } from 'howler';
-
 // Drum sound objects
 const kickSound = new Howl({
     src: ['./assets/sounds/kick.wav'],
