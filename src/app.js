@@ -47,63 +47,39 @@ let tom2KeyIsPressed = false;
 // Function to play a drum sound and trigger animation
 function playDrum(padId, sound) {
     sound.play();
+    document.getElementById(padId).style.transform = 'scale(1.05)';
+    setTimeout(function() {
+        document.getElementById('kick-pad').style.transform = 'scale(1)';
+    }, 140);
 }
 
 // Drum pad click event listeners
 document.getElementById('kick-pad').addEventListener('click', function() {
     playDrum('kick-pad', kickSound);
-    document.getElementById('kick-pad').style.transform = 'scale(1.05)';
-    setTimeout(function() {
-        document.getElementById('kick-pad').style.transform = 'scale(1)';
-    }, 140);
 });
 
 document.getElementById('closedhat-pad').addEventListener('click', function() {
     playDrum('closedhat-pad', closedHatSound);
-    document.getElementById('closedhat-pad').style.transform = 'scale(1.05)';
-    setTimeout(function() {
-        document.getElementById('closedhat-pad').style.transform = 'scale(1)';
-    }, 140);
 });
 
 document.getElementById('openhat-pad').addEventListener('click', function() {
     playDrum('openhat-pad', openHatSound);
-    document.getElementById('openhat-pad').style.transform = 'scale(1.05)';
-    setTimeout(function() {
-        document.getElementById('openhat-pad').style.transform = 'scale(1)';
-    }, 140);
 });
 
 document.getElementById('snare-pad').addEventListener('click', function() {
     playDrum('snare-pad', snareSound);
-    document.getElementById('snare-pad').style.transform = 'scale(1.05)';
-    setTimeout(function() {
-        document.getElementById('snare-pad').style.transform = 'scale(1)';
-    }, 140);
 });
 
 document.getElementById('cymbal-pad').addEventListener('click', function() {
     playDrum('cymbal-pad', cymbalSound);
-    document.getElementById('cymbal-pad').style.transform = 'scale(1.05)';
-    setTimeout(function() {
-        document.getElementById('cymbal-pad').style.transform = 'scale(1)';
-    }, 140);
 });
 
 document.getElementById('tom1-pad').addEventListener('click', function() {
     playDrum('tom1-pad', tom1Sound);
-    document.getElementById('tom1-pad').style.transform = 'scale(1.05)';
-    setTimeout(function() {
-        document.getElementById('tom1-pad').style.transform = 'scale(1)';
-    }, 140);
 });
 
 document.getElementById('tom2-pad').addEventListener('click', function() {
     playDrum('tom2-pad', tom2Sound);
-    document.getElementById('tom2-pad').style.transform = 'scale(1.05)';
-    setTimeout(function() {
-        document.getElementById('tom2-pad').style.transform = 'scale(1)';
-    }, 140);
 });
 
 // Keyboard event listeners
