@@ -33,7 +33,7 @@
 
 4. Click on the drum tiles or press the corresponding keys on your keyboard to play the drum sounds.
 
-Alternatively, you can access the application online at [Drumms🥁](drummss.vercel.app). Simply open the link in your web browser to start playing the drums.
+Alternatively, you can access the application online at [Drumms🥁](https://drummss.vercel.app). Simply open the link in your web browser to start playing the drums.
 
 ## Customization
 
