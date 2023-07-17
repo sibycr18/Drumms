@@ -4,14 +4,14 @@ body {
     color: #ffffff;
     text-align: center;
     user-select: none;
-  }
-  
-  h1 {
+}
+
+h1 {
     margin-top: 20px;
     font-size: 36px;
-  }
-  
-  .drum-pad {
+}
+
+.drum-pad {
     display: inline-block;
     width: 120px;
     height: 120px;
@@ -24,25 +24,44 @@ body {
     padding-top: 50px;
     position: relative;
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  }
-  
-  .drum-pad:hover {
+}
+
+.drum-pad:hover {
     background-color: #3949ab;
     transform: scale(0.95);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .key-letter {
+}
+
+
+/* CSS for mobile browsers without animations */
+@media (max-width: 768px) {
+    .drum-pad {
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        background-color: #5c6bc0;
+        border-radius: 5px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 50px;
+        position: relative;
+        animation: none;
+    }
+}
+
+.key-letter {
     font-size: 36px;
     line-height: 1;
     color: #ffffff;
     padding-bottom: 10px;
-  }
-  
-  .sound-name {
+}
+
+.sound-name {
     font-size: 18px;
     line-height: 1;
     color: #ffdb4d;
     font-weight: bold;
     padding-top: 5px;
-  }
+}
