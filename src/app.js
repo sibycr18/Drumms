@@ -84,31 +84,32 @@ document.getElementById('tom2-pad').addEventListener('click', function() {
 
 // Keyboard event listeners
 document.addEventListener('keydown', function(event) {
-    if (event.key === 'a' && !kickKeyIsPressed) {
+    const key = event.key.toLowerCase();
+    if (key === 'a' && !kickKeyIsPressed) {
         kickKeyIsPressed = true;
         playDrum('kick-pad', kickSound);
 
-    } else if (event.key === 'q' && !closedHatKeyIsPressed) {
+    } else if (key === 'q' && !closedHatKeyIsPressed) {
         closedHatKeyIsPressed = true;
         playDrum('closedhat-pad', closedHatSound);
 
-    } else if (event.key === 'w' && !openHatKeyIsPressed) {
+    } else if (key === 'w' && !openHatKeyIsPressed) {
         openHatKeyIsPressed = true;
         playDrum('openhat-pad', openHatSound);
 
-    } else if (event.key === 's' && !snareKeyIsPressed) {
+    } else if (key === 's' && !snareKeyIsPressed) {
         snareKeyIsPressed = true;
         playDrum('snare-pad', snareSound);
 
-    } else if (event.key === 'e' && !cymbalKeyIsPressed) {
+    } else if (key === 'e' && !cymbalKeyIsPressed) {
         cymbalKeyIsPressed = true;
         playDrum('cymbal-pad', cymbalSound);
 
-    } else if (event.key === 'd' && !tom1KeyIsPressed) {
+    } else if (key === 'd' && !tom1KeyIsPressed) {
         tom1KeyIsPressed = true;
         playDrum('tom1-pad', tom1Sound);
 
-    } else if (event.key === 'f' && !tom2KeyIsPressed) {
+    } else if (key === 'f' && !tom2KeyIsPressed) {
         tom2KeyIsPressed = true;
         playDrum('tom2-pad', tom2Sound);
     }
