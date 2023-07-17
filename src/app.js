@@ -116,19 +116,20 @@ document.addEventListener('keydown', function(event) {
 });
 
 document.addEventListener('keyup', function(event) {
-    if (event.key === 'a') {
+    const key = event.key.toLowerCase();
+    if (key === 'a') {
         kickKeyIsPressed = false;
-    } else if (event.key === 'q') {
+    } else if (key === 'q') {
         closedHatKeyIsPressed = false;
-    } else if (event.key === 'w') {
+    } else if (key === 'w') {
         openHatKeyIsPressed = false;
-    } else if (event.key === 's') {
+    } else if (key === 's') {
         snareKeyIsPressed = false;
-    } else if (event.key === 'e') {
+    } else if (key === 'e') {
         cymbalKeyIsPressed = false;
-    } else if (event.key === 'd') {
+    } else if (key === 'd') {
         tom1KeyIsPressed = false;
-    } else if (event.key === 'f') {
+    } else if (key === 'f') {
         tom2KeyIsPressed = false;
     }
 });
