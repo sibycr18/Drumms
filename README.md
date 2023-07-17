@@ -19,7 +19,6 @@
 - **HTML**: Provides the structure and layout of the webpage.
 - **CSS**: Handles the visual styling and responsiveness of the app.
 - **JavaScript**: Implements the drum interaction, key mappings, and audio playback.
-- Audio files: Sound samples in an appropriate format (e.g., WAV, MP3).
 
 ## Usage
 
