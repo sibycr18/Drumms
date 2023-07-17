@@ -49,7 +49,7 @@ function playDrum(padId, sound) {
     sound.play();
     document.getElementById(padId).style.transform = 'scale(1.05)';
     setTimeout(function() {
-        document.getElementById('kick-pad').style.transform = 'scale(1)';
+        document.getElementById(padId).style.transform = 'scale(1)';
     }, 140);
 }
 
