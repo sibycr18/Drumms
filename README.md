@@ -31,7 +31,7 @@
 
 3. Open the index.html file in your web browser.
 
-4. Click on the drum tiles or press the corresponding keys on your keyboard to play the drum sounds. 
+4. Click on the drum tiles or press the corresponding keys on your keyboard to play the drum sounds.
 
 ## Customization
 
