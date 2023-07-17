@@ -169,24 +169,17 @@ document.addEventListener('keydown', function(event) {
 document.addEventListener('keyup', function(event) {
     if (event.key === 'a') {
         kickKeyIsPressed = false;
-        document.getElementById('kick-pad').classList.remove('active');
     } else if (event.key === 'q') {
         closedHatKeyIsPressed = false;
-        document.getElementById('closedhat-pad').classList.remove('active');
     } else if (event.key === 'w') {
         openHatKeyIsPressed = false;
-        document.getElementById('openhat-pad').classList.remove('active');
     } else if (event.key === 's') {
         snareKeyIsPressed = false;
-        document.getElementById('snare-pad').classList.remove('active');
     } else if (event.key === 'e') {
         cymbalKeyIsPressed = false;
-        document.getElementById('cymbal-pad').classList.remove('active');
     } else if (event.key === 'd') {
         tom1KeyIsPressed = false;
-        document.getElementById('tom1-pad').classList.remove('active');
     } else if (event.key === 'f') {
         tom2KeyIsPressed = false;
-        document.getElementById('tom2-pad').classList.remove('active');
     }
 });
