@@ -2,7 +2,7 @@ import { Howl } from 'howler';
 
 // Drum sound objects
 const kickSound = new Howl({
-    src: ['/assets/sounds/kick.wav'],
+    src: ['./assets/sounds/kick.wav'],
     html5: true
 });
 const closedHatSound = new Howl({
@@ -10,23 +10,23 @@ const closedHatSound = new Howl({
     html5: true
 });
 const openHatSound = new Howl({
-    src: ['../assets/sounds/openhat.wav'],
+    src: ['./assets/sounds/openhat.wav'],
     html5: true
 });
 const snareSound = new Howl({
-    src: ['../assets/sounds/snare.wav'],
+    src: ['./assets/sounds/snare.wav'],
     html5: true
 });
 const cymbalSound = new Howl({
-    src: ['../assets/sounds/cymbal.wav'],
+    src: ['./assets/sounds/cymbal.wav'],
     html5: true
 });
 const tom1Sound = new Howl({
-    src: ['../assets/sounds/tom1.wav'],
+    src: ['./assets/sounds/tom1.wav'],
     html5: true
 });
 const tom2Sound = new Howl({
-    src: ['../assets/sounds/tom2.wav'],
+    src: ['./assets/sounds/tom2.wav'],
     html5: true
 });
 
