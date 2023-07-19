@@ -1,10 +1,10 @@
-# Drumms🥁
+# Drummss🥁
 
-**Drumms** is a web application that allows users to play virtual drums using their keyboard or by clicking on drum tiles. Each drum tile represents a different drum sound and is mapped to a specific keyboard letter. The app supports playing multiple sounds simultaneously, providing a realistic drumming experience.
+**Drummss** is a web application that allows users to play virtual drums using their keyboard or by clicking on drum tiles. Each drum tile represents a different drum sound and is mapped to a specific keyboard letter. The app supports playing multiple sounds simultaneously, providing a realistic drumming experience.
 
 ## Images
 
-![image](https://github.com/sibycr18/Drumms/assets/96712914/8c050dfc-5187-492b-bd02-ba7ade6c5138)
+![image](https://github.com/sibycr18/Drummss/assets/96712914/8c050dfc-5187-492b-bd02-ba7ade6c5138)
 
 ## Features
 
@@ -25,18 +25,18 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/Drumms.git
+   git clone https://github.com/your-username/Drummss.git
 
 2. Navigate to the project directory:
 
     ```bash
-    cd Drumms/src
+    cd Drummss/src
 
 3. Open the index.html file in your web browser.
 
 4. Click on the drum tiles or press the corresponding keys on your keyboard to play the drum sounds.
 
-Alternatively, you can access the application online at [Drumms🥁](https://drummss.vercel.app). Simply open the link in your web browser to start playing the drums.
+Alternatively, you can access the application online at [Drummss🥁](https://drummss.vercel.app). Simply open the link in your web browser to start playing the drums.
 
 ## Customization
 
