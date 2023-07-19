@@ -65,3 +65,20 @@ h1 {
     font-weight: bold;
     padding-top: 5px;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    /* background-color: #f5f5f5; */
+  }
+
+.button-container > div {
+    margin-right: 20px;
+}
