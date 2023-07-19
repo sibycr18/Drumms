@@ -34,13 +34,13 @@ const tom2Sound = new Howl({
     html5: true,
     preload: true
 });
-kickSound.volume(0.5);
+kickSound.volume(0.4);
 snareSound.volume(0.4);
-closedHatSound.volume(0.5);
-openHatSound.volume(0.5);
-tom1Sound.volume(0.5);
-tom2Sound.volume(0.5);
-cymbalSound.volume(0.5);
+closedHatSound.volume(0.4);
+openHatSound.volume(0.4);
+tom1Sound.volume(0.4);
+tom2Sound.volume(0.4);
+cymbalSound.volume(0.4);
 
 // Define variables to track the key state and animation state
 let kickKeyIsPressed = false;
