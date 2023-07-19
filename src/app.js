@@ -91,6 +91,36 @@ document.getElementById('tom2-pad').addEventListener('click', function() {
     playDrum('tom2-pad', tom2Sound);
 });
 
+// Touch event listeners
+document.getElementById('kick-pad').addEventListener('touchstart', function(event) {
+    event.preventDefault();
+    playDrum('kick-pad', kickSound);
+});
+document.getElementById('closedhat-pad').addEventListener('touchstart', function(event) {
+    event.preventDefault();
+    playDrum('closedhat-pad', closedHatSound);
+});
+document.getElementById('openhat-pad').addEventListener('touchstart', function(event) {
+    event.preventDefault();
+    playDrum('openhat-pad', openHatSound);
+});
+document.getElementById('snare-pad').addEventListener('touchstart', function(event) {
+    event.preventDefault();
+    playDrum('snare-pad', snareSound);
+});
+document.getElementById('cymbal-pad').addEventListener('touchstart', function(event) {
+    event.preventDefault();
+    playDrum('cymbal-pad', cymbalSound);
+});
+document.getElementById('tom1-pad').addEventListener('touchstart', function(event) {
+    event.preventDefault();
+    playDrum('tom1-pad', tom1Sound);
+});
+document.getElementById('tom2-pad').addEventListener('touchstart', function(event) {
+    event.preventDefault();
+    playDrum('tom2-pad', tom2Sound);
+});
+
 // Keyboard event listeners
 document.addEventListener('keydown', function(event) {
     const key = event.key.toLowerCase();
