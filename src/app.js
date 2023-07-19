@@ -85,51 +85,51 @@ document.getElementById('tom2-pad').addEventListener('click', function() {
 // Keyboard event listeners
 document.addEventListener('keydown', function(event) {
     const key = event.key.toLowerCase();
-    if (key === 'a' && !kickKeyIsPressed) {
+    if (key === 'a') {
         kickKeyIsPressed = true;
         playDrum('kick-pad', kickSound);
 
-    } else if (key === 'q' && !closedHatKeyIsPressed) {
+    } else if (key === 'q') {
         closedHatKeyIsPressed = true;
         playDrum('closedhat-pad', closedHatSound);
 
-    } else if (key === 'w' && !openHatKeyIsPressed) {
+    } else if (key === 'w') {
         openHatKeyIsPressed = true;
         playDrum('openhat-pad', openHatSound);
 
-    } else if (key === 's' && !snareKeyIsPressed) {
+    } else if (key === 's') {
         snareKeyIsPressed = true;
         playDrum('snare-pad', snareSound);
 
-    } else if (key === 'e' && !cymbalKeyIsPressed) {
+    } else if (key === 'e') {
         cymbalKeyIsPressed = true;
         playDrum('cymbal-pad', cymbalSound);
 
-    } else if (key === 'd' && !tom1KeyIsPressed) {
+    } else if (key === 'd') {
         tom1KeyIsPressed = true;
         playDrum('tom1-pad', tom1Sound);
 
-    } else if (key === 'f' && !tom2KeyIsPressed) {
+    } else if (key === 'f') {
         tom2KeyIsPressed = true;
         playDrum('tom2-pad', tom2Sound);
     }
 });
 
-document.addEventListener('keyup', function(event) {
-    const key = event.key.toLowerCase();
-    if (key === 'a') {
-        kickKeyIsPressed = false;
-    } else if (key === 'q') {
-        closedHatKeyIsPressed = false;
-    } else if (key === 'w') {
-        openHatKeyIsPressed = false;
-    } else if (key === 's') {
-        snareKeyIsPressed = false;
-    } else if (key === 'e') {
-        cymbalKeyIsPressed = false;
-    } else if (key === 'd') {
-        tom1KeyIsPressed = false;
-    } else if (key === 'f') {
-        tom2KeyIsPressed = false;
-    }
-});
+// document.addEventListener('keyup', function(event) {
+//     const key = event.key.toLowerCase();
+//     if (key === 'a') {
+//         kickKeyIsPressed = false;
+//     } else if (key === 'q') {
+//         closedHatKeyIsPressed = false;
+//     } else if (key === 'w') {
+//         openHatKeyIsPressed = false;
+//     } else if (key === 's') {
+//         snareKeyIsPressed = false;
+//     } else if (key === 'e') {
+//         cymbalKeyIsPressed = false;
+//     } else if (key === 'd') {
+//         tom1KeyIsPressed = false;
+//     } else if (key === 'f') {
+//         tom2KeyIsPressed = false;
+//     }
+// });
