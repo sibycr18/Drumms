@@ -34,6 +34,8 @@ const tom2Sound = new Howl({
     html5: true,
     preload: true
 });
+
+// Volume set to 40%
 kickSound.volume(0.4);
 snareSound.volume(0.4);
 closedHatSound.volume(0.4);
@@ -60,7 +62,7 @@ function playDrum(padId, sound) {
     }, 140);
 }
 
-// Drum pad click event listeners
+// Drumpad click event listeners
 document.getElementById('kick-pad').addEventListener('click', function() {
     playDrum('kick-pad', kickSound);
 });
@@ -122,6 +124,7 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+// Updating boolean variables to false so that sounds don't repeat playing while holding the keys
 document.addEventListener('keyup', function(event) {
     const key = event.key.toLowerCase();
     if (key === 'a') {
