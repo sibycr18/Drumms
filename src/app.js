@@ -35,7 +35,7 @@ const tom2Sound = new Howl({
     preload: true
 });
 kickSound.volume(0.5);
-snareSound.volume(0.1);
+snareSound.volume(0.4);
 closedHatSound.volume(0.5);
 openHatSound.volume(0.5);
 tom1Sound.volume(0.5);
