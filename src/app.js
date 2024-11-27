@@ -36,13 +36,7 @@ const tom2Sound = new Howl({
 });
 
 // Volume set to 40%
-kickSound.volume(0.4);
-snareSound.volume(0.4);
-closedHatSound.volume(0.4);
-openHatSound.volume(0.4);
-tom1Sound.volume(0.4);
-tom2Sound.volume(0.4);
-cymbalSound.volume(0.4);
+Howler.volume(0.4);
 
 // Define variables to track the key state and animation state
 let kickKeyIsPressed = false;
@@ -55,10 +49,14 @@ let tom2KeyIsPressed = false;
 
 // Function to play a drum sound and trigger animation
 function playDrum(padId, sound) {
-    sound.play();
-    document.getElementById(padId).style.transform = 'scale(1.05)';
-    setTimeout(function() {
-        document.getElementById(padId).style.transform = 'scale(1)';
+    // Play the sound and get the sound ID for potential further manipulation
+    const soundId = sound.play();
+    
+    // Trigger visual feedback
+    const pad = document.getElementById(padId);
+    pad.style.transform = 'scale(1.05)';
+    setTimeout(() => {
+        pad.style.transform = 'scale(1)';
     }, 140);
 }
 
