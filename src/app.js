@@ -1,37 +1,37 @@
 // Drum sound objects
 const kickSound = new Howl({
     src: ['./assets/sounds/kick.wav'],
-    html5: true,
+    html5: false,
     preload: true
 });
 const closedHatSound = new Howl({
     src: ['../assets/sounds/closedhat.wav'],
-    html5: true,
+    html5: false,
     preload: true
 });
 const openHatSound = new Howl({
     src: ['./assets/sounds/openhat.wav'],
-    html5: true,
+    html5: false,
     preload: true
 });
 const snareSound = new Howl({
     src: ['./assets/sounds/snare.wav'],
-    html5: true,
+    html5: false,
     preload: true
 });
 const cymbalSound = new Howl({
     src: ['./assets/sounds/cymbal.wav'],
-    html5: true,
+    html5: false,
     preload: true
 });
 const tom1Sound = new Howl({
     src: ['./assets/sounds/tom1.wav'],
-    html5: true,
+    html5: false,
     preload: true
 });
 const tom2Sound = new Howl({
     src: ['./assets/sounds/tom2.wav'],
-    html5: true,
+    html5: false,
     preload: true
 });
 
@@ -49,15 +49,16 @@ let tom2KeyIsPressed = false;
 
 // Function to play a drum sound and trigger animation
 function playDrum(padId, sound) {
-    // Play the sound and get the sound ID for potential further manipulation
-    const soundId = sound.play();
+    // Immediate play with minimal overhead
+    sound.play();
     
-    // Trigger visual feedback
     const pad = document.getElementById(padId);
     pad.style.transform = 'scale(1.05)';
-    setTimeout(() => {
-        pad.style.transform = 'scale(1)';
-    }, 140);
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            pad.style.transform = 'scale(1)';
+        }, 140);
+    });
 }
 
 // Drumpad click event listeners
